@@ -57,6 +57,12 @@ let isResponse200 = function(code, expectedCode) {
     }
 }
 
+let someArrowFunction = () => {return 55}
+console.log(someArrowFunction())
+
+let IsValid = (code) => code === 200
+console.log(IsValid(400))
+
 function getTextMessage(response, codeValidation, expectedCode) {
     let text = response.body.text;
     if (!codeValidation(response.code, expectedCode)) {
