@@ -22,7 +22,8 @@ function isLengthMoreThan6(text) {
 isLengthMoreThan6("someWord")
 
 function calculateLengthMoreThan6(text) {
-    return text.length
+    return text.length;
+}
 
 }
 
